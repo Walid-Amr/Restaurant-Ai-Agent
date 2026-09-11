@@ -3,29 +3,6 @@
   "nodes": [
     {
       "parameters": {
-        "updates": [
-          "message"
-        ],
-        "additionalFields": {}
-      },
-      "type": "n8n-nodes-base.telegramTrigger",
-      "typeVersion": 1.5,
-      "position": [
-        -48,
-        -48
-      ],
-      "id": "237e7fad-c455-4908-be5a-0b6133b9b4eb",
-      "name": "Telegram Trigger",
-      "webhookId": "d1db9a36-8606-4d80-a5ac-fce11fc22cf6",
-      "credentials": {
-        "telegramApi": {
-          "id": "uFh2CV3YcRbqwJ97",
-          "name": "Telegram account 2"
-        }
-      }
-    },
-    {
-      "parameters": {
         "model": "inclusionai/ling-3.0-flash-fin:free",
         "options": {}
       },
@@ -39,14 +16,14 @@
       "name": "OpenRouter Chat Model",
       "credentials": {
         "openRouterApi": {
-          "id": "uPn7ftBdypmB8NVX",
+          "id": "YOUR_OPENROUTER_CREDENTIAL_ID",
           "name": "OpenRouter account"
         }
       }
     },
     {
       "parameters": {
-        "chatId": "={{ $('Telegram Trigger').item.json.message.from.id }}",
+        "chatId": "={{ $json.message.from.id }}",
         "text": "={{ $json.output.message }}",
         "additionalFields": {
           "appendAttribution": false
@@ -63,8 +40,8 @@
       "webhookId": "5837f6ed-0271-4d1f-b6d8-764a00a5d2e3",
       "credentials": {
         "telegramApi": {
-          "id": "uFh2CV3YcRbqwJ97",
-          "name": "Telegram account 2"
+          "id": "YOUR_TELEGRAM_CREDENTIAL_ID",
+          "name": "Telegram account"
         }
       }
     },
@@ -89,15 +66,11 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "cachedResultName": "Salta3 Orders",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1P6FqASXlxmURilQQWLCEJnBD83aY6qisIxb06xHhKxI/edit?usp=drivesdk",
           "mode": "list",
-          "value": "1P6FqASXlxmURilQQWLCEJnBD83aY6qisIxb06xHhKxI"
+          "value": "YOUR_GOOGLE_SHEET_ID"
         },
         "sheetName": {
           "__rl": true,
-          "cachedResultName": "Sheet1",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1P6FqASXlxmURilQQWLCEJnBD83aY6qisIxb06xHhKxI/edit#gid=0",
           "mode": "list",
           "value": "gid=0"
         },
@@ -189,7 +162,7 @@
       "name": "Append row in sheet",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "wzhsIh3ok101yrkr",
+          "id": "YOUR_GOOGLE_SHEETS_CREDENTIAL_ID",
           "name": "Google Sheets account"
         }
       }
@@ -308,7 +281,7 @@
       "name": "OpenRouter Chat Model1",
       "credentials": {
         "openRouterApi": {
-          "id": "uPn7ftBdypmB8NVX",
+          "id": "YOUR_OPENROUTER_CREDENTIAL_ID",
           "name": "OpenRouter account"
         }
       }
@@ -317,9 +290,8 @@
       "parameters": {
         "documentId": {
           "__rl": true,
-          "cachedResultName": "Salta3 Orders",
           "mode": "list",
-          "value": "1P6FqASXlxmURilQQWLCEJnBD83aY6qisIxb06xHhKxI"
+          "value": "YOUR_GOOGLE_SHEET_ID"
         },
         "sheetName": {
           "__rl": true,
@@ -338,7 +310,7 @@
       ],
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "wzhsIh3ok101yrkr",
+          "id": "YOUR_GOOGLE_SHEETS_CREDENTIAL_ID",
           "name": "Google Sheets account"
         }
       }
@@ -371,9 +343,8 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "cachedResultName": "Salta3 Orders",
           "mode": "list",
-          "value": "1P6FqASXlxmURilQQWLCEJnBD83aY6qisIxb06xHhKxI"
+          "value": "YOUR_GOOGLE_SHEET_ID"
         },
         "sheetName": {
           "__rl": true,
@@ -426,7 +397,7 @@
       ],
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "wzhsIh3ok101yrkr",
+          "id": "YOUR_GOOGLE_SHEETS_CREDENTIAL_ID",
           "name": "Google Sheets account"
         }
       }
@@ -434,17 +405,6 @@
   ],
   "pinData": {},
   "connections": {
-    "Telegram Trigger": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "OpenRouter Chat Model": {
       "ai_languageModel": [
         [
@@ -562,14 +522,11 @@
     "binaryMode": "separate",
     "availableInMCP": true
   },
-  "versionId": "ced65f6d-746f-482f-8398-90ec4851c805",
   "meta": {
     "templateCredsSetupCompleted": true,
     "aiBuilderAssisted": true,
-    "builderVariant": "mcp",
-    "instanceId": "3a1c6fde203b1f5f5197697ac31bcd7cc700cc46a52c5f634533582175a3c80a"
+    "builderVariant": "mcp"
   },
   "nodeGroups": [],
-  "id": "oTx7NBsRPjCvELAY",
   "tags": []
 }
