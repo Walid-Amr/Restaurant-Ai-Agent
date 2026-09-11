@@ -1,4 +1,4 @@
-![Uploading Screenshot 2026-09-02 122320.png…]()
+[Uploading Screenshot 2026-09-02 122320.png…]()
 
 # Restaurant-Ai-Agent
 Building an AI-Powered Restaurant Ordering Assistant with n8n — A Case Study
