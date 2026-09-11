@@ -1,4 +1,5 @@
-<img width="1253" height="408" alt="Screenshot 2026-09-01 234503" src="https://github.com/user-attachments/assets/c984f66a-60fc-4111-97d8-d23c7bdf05c4" />
+![Uploading Screenshot 2026-09-02 122320.png…]()
+
 # Restaurant-Ai-Agent
 Building an AI-Powered Restaurant Ordering Assistant with n8n — A Case Study
 The Problem
