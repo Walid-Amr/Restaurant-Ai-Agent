@@ -1,6 +1,5 @@
-<img width="1491" height="522" alt="Screenshot 2026-09-02 122320" src="https://github.com/user-attachments/assets/2a42525e-5123-4026-b149-b882d4547667" />
-[My workflow (2).json](https://github.com/user-attachments/files/32131553/My.workflow.2.json)
-{
+[My workflow (2).json.json](https://github.com/user-attachments/files/32131607/My.workflow.2.json.json)<img width="1491" height="522" alt="Screenshot 2026-09-02 122320" src="https://github.com/user-attachments/assets/2a42525e-5123-4026-b149-b882d4547667" />
+[Uploading My workflow (2).json.json…{
   "name": "My workflow",
   "nodes": [
     {
@@ -574,7 +573,8 @@
   "nodeGroups": [],
   "id": "oTx7NBsRPjCvELAY",
   "tags": []
-}
+}]()
+
 
 # Restaurant-Ai-Agent
 Building an AI-Powered Restaurant Ordering Assistant with n8n — A Case Study
